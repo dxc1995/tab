@@ -56,12 +56,12 @@
 }
 
 .notice-con .mod {
-	margin: 10px 10px 10px 10px;
+	margin: 10px 6px;
 }
 
 .notice-con .mod ul li {
 	float: left;
-	width: 134px;
+	width: 143px;
 	height: 33px;
 	overflow: hidden;
 }
