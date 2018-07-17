@@ -46,11 +46,22 @@
     font-weight: bold;
 }
 
-.notice-tit li a {
+.notice li a {
 	text-decoration: none;
 	color: #000;
 }
 
-.notice-tit li a:hover {
+.notice li a:hover {
 	color: #f90;
+}
+
+.notice-con .mod {
+	margin: 10px 10px 10px 10px;
+}
+
+.notice-con .mod ul li {
+	float: left;
+	width: 134px;
+	height: 33px;
+	overflow: hidden;
 }
