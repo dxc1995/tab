@@ -26,6 +26,11 @@ function tab() {
 
     	
     }
+
+    if(timer) {
+    	clearInterval(timer);
+    	timer = null;
+    }
 	// 添加定时器,改变当前高亮的索引
 	timer = setInterval(autoPlay, 2000);
 
@@ -38,6 +43,7 @@ function tab() {
 	}
 
 	function changeOption(curIndex) {
+		console.log(curIndex);
 		for(var j = 0; j<lis.length; j++) {
 			lis[j].className = "";
 			divs[j].style.display = "none";
@@ -45,6 +51,7 @@ function tab() {
 		// 高度显示当前页签
 		lis[curIndex].className = "select";
 		divs[curIndex].style.display = "block";
+		index = curIndex;
 	}
 
 }
